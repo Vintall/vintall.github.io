@@ -1,1 +1,0 @@
-# vintall.github.io
