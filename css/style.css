@@ -1,44 +1,50 @@
-body {
-	background-color: #000;
-	color: #fff;
-	font-family: sans-serif;
-	text-align: center;
-	margin: 0;
-	padding: 80px 0 0;
+body
+{
+    background-color: #312d2d;
 }
-label, button {
-	display: block;
-	margin: 20px auto;
+div
+{
+  margin: 10px;
+  border: 0.5px solid black;
+  font-size: 20px;
+  height: 80px;
 }
-input {
-	border: 2px solid #d5d5d5;
-	line-height: 22px;
-	margin-left: 20px;
-	min-width: 230px;
+#background {
+    height: 100%;
+    background-color: #474a3c;
 }
-.label {
-	display: inline-block;
-	min-width: 400px;
-	text-align: left;
+#header {
+    background-color: #474a3c;
+    margin: 0px;
+    height: 50px;
 }
-button {
-	background-color: green;
-	border: medium none;
-	color: #fff;
-	font-size: 20px;
-	line-height: 40px;
-	margin-top: 40px;
-	padding: 0 30px;
-	cursor: pointer;
-	text-transform: uppercase;
+#logo
+{
+  margin:0px;
+  width:100px;
+  height:100%;
+  float:left;
 }
-label {
-	margin: 0;
-	padding: 12px 0;
-	-webkit-transition: all .25s;
-	-o-transition: all .25s;
-	transition: all .25s;
+#contacts
+{
+  margin:0px;
+  width:30%;
+  height:100%;
+  float:right;
 }
-label:hover {
-	background-color: rgba(255, 255, 255, .2);
+#main
+{
+  background-color: gray;
+  height: 100%;
+}
+#menu
+{
+  background-color: green;
+  margin:0px;
+  height:30px
+}
+#content
+{
+  background-color: lightgreen;
+  margin:0px;
 }
