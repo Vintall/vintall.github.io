@@ -26,11 +26,11 @@ div{
     height: 50px;
     margin-bottom:20px;
 }
-#logo{
-  margin:0px;
-  width:400px;
-  height:100%;
-  float:left;
+#logo {
+    margin: 0px;
+    width: 400px;
+    height: 100%;
+    float: left;
 }
 #logo_img_block {
     width: 50px;
