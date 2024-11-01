@@ -103,12 +103,12 @@ nav ul li a:hover {
     background-size: cover;
     background-position: center;
     transition: background-image 0.3s ease; /* Smooth transition for hover effect */
-    background-image: url('../Media/Images/SocialNetworks/Discord.png')
+    background-image: url('../media/images/socialNetworks/Discord.png')
 }
 
 /* Hover effect for showing GIF */
 .card:hover .card-image {
-    background-image: url('../Media/slap-slapping.gif'); /* Replace with the correct GIF path */
+    background-image: url('../media/slap-slapping.gif'); /* Replace with the correct GIF path */
 }
 
 
