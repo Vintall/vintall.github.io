@@ -1,77 +1,79 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Vintall</title>
-</head>
-<body>
-    <div id="background">
-        <div id="header">
-            <div id="logo">
-                <div id="logo_img_block">
-                    <img id="logo_img" src="../images/logo.png">
-                </div>
-                <div id="logo_name_block">
-                    <a>Egor Ilyashenko</a>
-                    <br>
-                    <a>Psevdo-name: Vintall</a>
-                </div>
-            </div>
-            <div id="contacts">
-                <table class="contact_table">
-                    <tr>
-                        <th class="contact_table">
-                            <a class="contact_links" href="https://steamcommunity.com/id/Vintall">
-                                <img class="contact_links_img" src="../images/social_networks/steam.png" alt="Steam">
-                            </a>
-                        </th>
-                        <th class="contact_table">
-                            <a class="contact_links" href="https://t.me/Vintall">
-                                <img class="contact_links_img" src="../images/social_networks/telegram.png" alt="Telegram">
-                            </a>
-                        </th>
-                        <th class="contact_table">
-                            <a class="contact_links" href="https://discord.com/channels/@Vintall#5770">
-                                <img class="contact_links_img" src="../images/social_networks/discord.png" alt="Discord">
-                            </a>
-                        </th>
-                        <th class="contact_table">
-                            <a class="contact_links" href="mailto: eg.ilyashenko@gmail.com">
-                                <img class="contact_links_img" src="../images/social_networks/gmail.png" alt="Gmail">
-                            </a>
-                        </th>
-                        <th class="contact_table">
-                            <a class="contact_links" href="https://www.linkedin.com/in/egor-ilyashenko/">
-                                <img class="contact_links_img" src="../images/social_networks/linked_in.png" alt="LinkedIn">
-                            </a>
-                        </th>
-                        <th class="contact_table">
-                            <a class="contact_links" href="https://github.com/Vintall">
-                                <img class="contact_links_img" src="../images/social_networks/git.png" alt="Git">
-                            </a>
-                        </th>
-                    </tr>
-                </table>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <title>Vintall</title>
+    </head>
+    <body>
+        <!-- Header Section -->
+        <div class="header">
+            <h1>Game Developer Portfolio</h1>
+            <div class="navigation">
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
         </div>
-        <div id="main">
-            <div id="menu">
-                <a class="menu_links" href="../index.html">Introduction</a>
-                <a class="menu_links" href="../html/projects.html">Projects</a>
-                <a class="menu_links" href="../html/resume.html">Resume</a>
-            </div>
-            <div id="content">
-                <div class="content_block" id="project_1">
-                    <h2 style="text-align:center;"><a href="../html/EmittersArray.html">Emitters Array</a></h2>
-                    <p style="text-align:center;"><a href="https://github.com/Vintall/EmittersArray">Project link</a></p>
-                    <p>EmittersArray is a editor-based interference image simulation. You can place either single emitter, or "EmittersArray", which is basicly an emitters list, structurised in a lined way to adjust wave front angle.</p>
-                </div>
-                <div class="content_block" id="project_2"></div>
-                <p></p> 
-            </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <section class="column" id="commercial-games">
+                <h2>Commercial Projects</h2>
+
+                <!-- Example Cards -->
+
+                <a href="commercial-game1.html" class="card">
+                    <div class="card-image"></div>
+                    <div class="card-tags">
+                        <span class="tag">
+                            <img id="tag_playmarket" src="/Media/Images/GooglePlayLogo.png" alt="Google Play" />
+                        </span>
+                        <span class="tag steam">
+                            <img id="tag_steam" src="/Media/Images/SteamLogo.png" alt="Steam" />
+                        </span>
+                    </div>
+                </a>
+                <a href="commercial-game2.html" class="card">
+                    <div class="card-image"></div>
+                    <div class="card-tags">
+                        <span class="tag itch">
+                            <img src="itch-io.png" alt="Itch.io" />
+                        </span>
+                    </div>
+                </a>
+                <a href="commercial-game1.html" class="card">
+                    <div class="card-image"></div>
+                    <div class="card-tags">
+                        <span class="tag playmarket">
+                            <img src="/Media/Images/SocialNetworks/Git.png" alt="Google Play" />
+                        </span>
+                        <span class="tag steam">
+                            <img src="steam.png" alt="Steam" />
+                        </span>
+                    </div>
+                </a>
+            </section>
+
+            <section class="column" id="pet-projects">
+                <h2>Pet Projects</h2>
+
+                <!-- Example Cards -->
+                <a href="pet-project1.html" class="card">
+                    <div class="card-image"></div>
+                    <div class="card-tags">
+                        <span class="tag itch">
+                            <img src="itch-io.png" alt="Itch.io" />
+                        </span>
+                        <span class="tag playmarket">
+                            <img src="google-play.png" alt="Google Play" />
+                        </span>
+                    </div>
+                </a>
+            </section>
         </div>
-    </div>
-</body>
+    </body>
 </html>
