@@ -1,23 +1,31 @@
 <script setup>
 import GameCard from '../GameCard.vue';
-import Content from '../Content.vue';
+import ContentView from '../ContentView.vue';
+import { ref } from 'vue';
+
+const testTags = ref([
+    { link: "http://vintall.github.io", img: "src/assets/media/SlapSlapping.gif" },
+    { link: "http://vintall.github.io", img: "src/assets/media/SlapSlapping.gif" },
+    ])
+
+
+import CommercialProjects from '../projectsColumns/CommercialProjects.vue';
+import GameJamsColumn from '../projectsColumns/GameJamsColumn.vue';
+
 
 </script>
 
 <template>
-    <img class="absolute w-full h-full -z-10" src="/src/assets/media/SlapSlapping.gif">
-
-    </img>
     <div>
-        <Content/>
+        <ContentView>
+            <div class="flex flex-row justify-center gap-5 w-full">
+                <div class="w-full">
+                    <CommercialProjects></CommercialProjects>
+                </div>
+                <div class="w-full">
+                    <GameJamsColumn></GameJamsColumn>
+                </div>
+            </div>
+        </ContentView>
     </div>
-    <div class="flex flex-row w-full min-h-15 bg-blue-200 justify-items-end">
-        <div class="basis-1/3 h-5 bg-amber-200"></div>
-        <div class="basis-2/3 h-5 bg-amber-100"></div>
-    </div>
-    <RouterLink to = "/">Go to Home</RouterLink>
-    <RouterLink to = "/projects">Go to Projects</RouterLink>
-   <div>
-    <GameCard/>
-   </div>
 </template>
