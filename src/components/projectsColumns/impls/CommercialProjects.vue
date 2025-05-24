@@ -1,6 +1,6 @@
 <script setup>
-import ProjectsColumn from './ProjectsColumn.vue';
-import GameCard from '../GameCard.vue';
+import ProjectsColumn from '../ProjectsColumn.vue';
+import GameCard from '@/components/GameCard.vue'
 import MergeGamesData from '@/components/projects/Commercial/MergeGames/MergeGamesData.js'
 import { ref } from 'vue';
 

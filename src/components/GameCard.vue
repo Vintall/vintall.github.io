@@ -17,8 +17,7 @@ defineProps({
     required: false,
   },
 })
-import GameCardTag from './GameCardTag.vue';
-import PlayMarketTag from './gameCardTags/PlayMarketTag.vue';
+import GameCardTag from '@/components/GameCardTag.vue'
 </script>
 
 <template>

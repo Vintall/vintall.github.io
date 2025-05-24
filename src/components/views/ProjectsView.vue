@@ -1,6 +1,7 @@
 <script setup>
-import GameCard from '../GameCard.vue';
 import ContentView from '../core/ContentView.vue';
+import CommercialProjects from '@/components/projectsColumns/impls/CommercialProjects.vue';
+import GameJamsColumn from '@/components/projectsColumns/impls/GameJamsColumn.vue';
 import { ref } from 'vue';
 
 const testTags = ref([
@@ -9,8 +10,7 @@ const testTags = ref([
     ])
 
 
-import CommercialProjects from '../projectsColumns/CommercialProjects.vue';
-import GameJamsColumn from '../projectsColumns/GameJamsColumn.vue';
+
 
 
 </script>

@@ -1,6 +1,6 @@
 <script setup>
-import ProjectsColumn from './ProjectsColumn.vue';
-import GameCard from '../GameCard.vue';
+import ProjectsColumn from '@/components/projectsColumns/ProjectsColumn.vue'
+import GameCard from '@/components/GameCard.vue';
 import { ref } from 'vue';
 
 const projectsCards = ref([
