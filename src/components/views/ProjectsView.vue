@@ -1,6 +1,6 @@
 <script setup>
 import GameCard from '../GameCard.vue';
-import ContentView from '../ContentView.vue';
+import ContentView from '../core/ContentView.vue';
 import { ref } from 'vue';
 
 const testTags = ref([

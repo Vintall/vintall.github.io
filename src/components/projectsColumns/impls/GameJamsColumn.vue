@@ -1,5 +1,5 @@
 <script setup>
-import ProjectsColumn from '../ProjectsColumn.vue';
+import ProjectsColumn from './ProjectsColumn.vue';
 import GameCard from '../GameCard.vue';
 import { ref } from 'vue';
 

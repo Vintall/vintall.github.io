@@ -1,6 +1,6 @@
 <script setup>
 import GameCard from '@/components/GameCard.vue';
-import MergeGamesData from '@/components/views/projects/MergeGamesData'
+import MergeGamesData from '@/components/projects/Commercial/MergeGames/MergeGamesData'
 
 </script>
 
