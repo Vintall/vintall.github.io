@@ -21,7 +21,7 @@ import GameCardTag from '@/components/GameCardTag.vue'
 </script>
 
 <template>
-  <div class="block bg-gray-700 mb-0 rounded-b-3xl rounded-r-3xl border-1 border-gray-900 shadow-gray-900 shadow-2xl">
+  <div class="bg-gray-700 mb-0 rounded-b-3xl rounded-r-3xl border-1 border-gray-900 shadow-gray-900 shadow-2xl">
     <h1 class="mx-6 mb-1 mt-1 text-2xl font-medium text-gray-300">{{ name }}</h1>
     <a class="flex aspect-3/2 bg-auto bg-repeat-round flex-wrap items-end m-2 rounded-xl border-2 border-gray-900" :style="{ backgroundImage: `url(${img})` }" :href="link">
     </a>

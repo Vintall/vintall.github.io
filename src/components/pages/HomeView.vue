@@ -1,5 +1,5 @@
 <script setup>
-import ContentView from '../core/ContentView.vue';
+import ContentView from '@/components/core/ContentView.vue';
 </script>
 
 <template>

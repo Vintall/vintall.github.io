@@ -1,5 +1,5 @@
 <script setup>
-import ContentView from '../core/ContentView.vue';
+import ContentView from '@/components/core/ContentView.vue';
 import CommercialProjects from '@/components/projectsColumns/impls/CommercialProjects.vue';
 import GameJamsColumn from '@/components/projectsColumns/impls/GameJamsColumn.vue';
 import { ref } from 'vue';

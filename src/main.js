@@ -4,9 +4,9 @@ import { createWebHashHistory, createRouter } from 'vue-router'
 import { createApp } from 'vue'
 
 import App from './App.vue'
-import HomeView from './components/views/HomeView.vue'
-import ProjectsView from './components/views/ProjectsView.vue'
-import ResourcesView from './components/views/ResourcesView.vue'
+import HomeView from '@/components/pages/HomeView.vue'
+import ProjectsView from '@/components/pages/ProjectsView.vue'
+import ResourcesView from '@/components/pages/ResourcesView.vue'
 
 const routes = [
   { path: '/', name: 'home', component: HomeView },
