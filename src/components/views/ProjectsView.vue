@@ -18,13 +18,9 @@ import GameJamsColumn from '../projectsColumns/GameJamsColumn.vue';
 <template>
     <div>
         <ContentView>
-            <div class="flex flex-row justify-center gap-5 w-full">
-                <div class="w-full">
-                    <CommercialProjects></CommercialProjects>
-                </div>
-                <div class="w-full">
-                    <GameJamsColumn></GameJamsColumn>
-                </div>
+            <div class="flex flex-wrap justify-center gap-5 max-w-full min-w-max">
+                <CommercialProjects></CommercialProjects>
+                <GameJamsColumn></GameJamsColumn>
             </div>
         </ContentView>
     </div>

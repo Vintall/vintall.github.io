@@ -16,7 +16,7 @@ const elementalWarsTags = ref([
 
 <template>
     <ProjectsColumn column-name="Commercial Projects">
-        <GameCard link="http://vintall.github.io" img="https://play-lh.googleusercontent.com/Dn1Gp9QdlvpT1Ya2cKLCTZgCbu8RO5u616Fm6zRQrDtw8wJjxHu_yCHXjG4EohLzWA=w526-h296" :tags=mergeGamesTags name="Crypto Games"></GameCard>
-        <GameCard link="http://vintall.github.io" img="https://play-lh.googleusercontent.com/OGXURSY54hmZKrfDb8MDUkCeSbwwvmgFJBwJXYdSEsVrLsZiLUO26PAN0l1UpAHB80o=w526-h296" :tags=elementalWarsTags name="Elemental Wars"></GameCard>
+        <GameCard img="https://play-lh.googleusercontent.com/Dn1Gp9QdlvpT1Ya2cKLCTZgCbu8RO5u616Fm6zRQrDtw8wJjxHu_yCHXjG4EohLzWA=w526-h296" :tags=mergeGamesTags name="Crypto Merge Games"></GameCard>
+        <GameCard img="https://play-lh.googleusercontent.com/OGXURSY54hmZKrfDb8MDUkCeSbwwvmgFJBwJXYdSEsVrLsZiLUO26PAN0l1UpAHB80o=w526-h296" :tags=elementalWarsTags name="Elemental Wars"></GameCard>
     </ProjectsColumn>
 </template>

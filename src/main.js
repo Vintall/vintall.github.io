@@ -6,10 +6,12 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import HomeView from './components/views/HomeView.vue'
 import ProjectsView from './components/views/ProjectsView.vue'
+import ResourcesView from './components/views/ResourcesView.vue'
 
 const routes = [
   { path: '/', name: 'home', component: HomeView },
   { path: '/projects', name: 'projects', component: ProjectsView },
+  { path: '/resources', name: 'resources', component: ResourcesView },
 ]
 
 const router = createRouter({
