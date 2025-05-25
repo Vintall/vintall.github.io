@@ -11,10 +11,15 @@
                 <RouterLink to = "/resources" class="text-gray-300 font-bold">Resume</RouterLink>
             </div>
             <div class="flex flex-row flex-wrap items-center justify-end w-full">
-                <div class="w-10 h-10 bg-cyan-700 m-1"></div>
-                <div class="w-10 h-10 bg-cyan-600 m-1"></div>
-                <div class="w-10 h-10 bg-cyan-500 m-1"></div>
-                <div class="w-10 h-10 bg-cyan-400 m-1"></div>
+                <a href="https://github.com/Vintall">
+                    <img class="w-10 h-10" src="/src/assets/media/images/socialNetworks/Git.png" >
+                </a>
+                <a href="https://discord.gg/77HgCv2JRw">
+                    <img class="w-10 h-10" src="/src/assets/media/images/socialNetworks/Discord.png" >
+                </a>
+                <a href="http://t.me/vintall">
+                    <img class="w-10 h-10" src="/src/assets/media/images/socialNetworks/Telegram.png" >
+                </a>
             </div>
         </div>
     </div>
