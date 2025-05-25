@@ -1,13 +1,15 @@
 <script setup>
 import ContentView from '@/components/core/ContentView.vue';
+import ResourceCard from '@/components/ResourceCard.vue';
+import ResourcesData from '@/assets/data/ResourcesData.js';
+const resourcesData = ResourcesData();
 </script>
 
 <template>
     <div>
         <ContentView>
-            <div class="text-xl text-balance text-gray-100 hover:text-gray-400">
-                <a href="https://www.redblobgames.com/">Interactive visual explanations of math and algorithms</a>
-                <br>
+            <div v-for="resourceCard in resourcesData">
+                <ResourceCard :name="resourceCard.name" :link="resourceCard.link" :img="resourceCard.img" :desc="resourceCard.desc"></ResourceCard>
             </div>
         </ContentView>
     </div>
