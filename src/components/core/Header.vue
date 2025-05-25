@@ -12,13 +12,13 @@
             </div>
             <div class="flex flex-row flex-wrap items-center justify-end w-full">
                 <a href="https://github.com/Vintall">
-                    <img class="w-10 h-10" src="/src/assets/media/images/socialNetworks/Git.png" >
+                    <img class="w-10 h-10" src="/src/assets/media/images/socialNetworks/GitHubCircle.png" >
                 </a>
                 <a href="https://discord.gg/77HgCv2JRw">
-                    <img class="w-10 h-10" src="/src/assets/media/images/socialNetworks/Discord.png" >
+                    <img class="w-10 h-10" src="/src/assets/media/images/socialNetworks/DiscordCircle.png" >
                 </a>
                 <a href="http://t.me/vintall">
-                    <img class="w-10 h-10" src="/src/assets/media/images/socialNetworks/Telegram.png" >
+                    <img class="w-10 h-10" src="/src/assets/media/images/socialNetworks/TelegramCircle.png" >
                 </a>
             </div>
         </div>
