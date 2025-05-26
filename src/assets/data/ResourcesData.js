@@ -10,12 +10,14 @@ import PalettonPreview from "@/assets/media/resources/paletton.png"
 export const getTagById = (id) => tags.value.find(tag => tag.id === id)
 
 export const tags = ref([
-  { id: 'Gamedev', text: 'Gamedev', color: 'bg-red-700' },
-  { id: 'Unity', text: 'Unity', color: 'bg-green-500' },
-  { id: 'Shaders', text: 'Shaders', color: 'bg-pink-500' },
-  { id: 'Solid', text: 'SOLID', color: 'bg-cyan-500' },
-  { id: 'FreeAssets', text: 'Assets', color: 'bg-cyan-400' },
-  { id: 'Design', text: 'Design', color: 'bg-cyan-300' },
+  { id: 'Gamedev', text: 'Gamedev', color: 'bg-red-600/70' },
+  { id: 'Unity', text: 'Unity', color: 'bg-green-600/70' },
+  { id: 'Shaders', text: 'Shaders', color: 'bg-pink-600/70' },
+  { id: 'Solid', text: 'SOLID', color: 'bg-cyan-600/70' },
+  { id: 'FreeAssets', text: 'Assets', color: 'bg-amber-600/70' },
+  { id: 'Design', text: 'Design', color: 'bg-lime-600/70' },
+  { id: 'Market', text: 'Market Research', color: 'bg-violet-600/70'},
+  { id: 'Steam', text: 'Steam', color: 'bg-blue-600/70'},
 ])
 
 const resourceCards = ref([
