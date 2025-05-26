@@ -9,14 +9,7 @@ import ResourceCardTag from '../ResourceCardTag.vue';
 const route = useRoute()
 const router = useRouter()
 
-const unselectedTagIds = ref([])
 const selectedTagIds = ref([])
-
-const initUnselectedTags = () => {
-    tags.value.forEach(tag => {
-        unselectedTagIds.value.push(tag.id)
-    });
-}
 
 const initTagsFromUrl = () => {
   const tagParam = route.query.tags
@@ -25,7 +18,6 @@ const initTagsFromUrl = () => {
   }
 }
 
-initUnselectedTags()
 initTagsFromUrl()
 
 watch(selectedTagIds, (newTags) => 
@@ -33,7 +25,7 @@ watch(selectedTagIds, (newTags) =>
   router.replace({
     query: {
       ...route.query,
-      selectedTagIds: newTags.length > 0 ? newTags.join(',') : undefined,
+      tags: newTags.length > 0 ? newTags.join(',') : undefined,
     },
   })
 }, { deep: true })
@@ -51,13 +43,11 @@ const filteredItems = computed(() =>
 const addTag = (_id) => {
     if (!selectedTagIds.value.includes(_id)) {
   selectedTagIds.value.push(_id)
-  unselectedTagIds.value = unselectedTagIds.value.filter(id => id !== _id)
 }
 }
 
 const removeTag = (_id) => {
     selectedTagIds.value = selectedTagIds.value.filter(id => id !== _id)
-    unselectedTagIds.value.push(_id)
 }
 
 </script>
@@ -68,9 +58,9 @@ const removeTag = (_id) => {
             <div class="flex flex-col text-xl text-balance bg-gray-800 hover:bg-gray-900 rounded-2xl m-2 pt-3 px-3 border-gray-300 border-3 shadow-2xl shadow-gray-900">
                 <h1 class="text-gray-200 text-xl">Filters</h1>
                 <div class="mb-4 flex flex-wrap gap-2 min-h-8">
-                    <label v-for="tagId in unselectedTagIds" :key="tagId" class="flex items-center space-x-2">
-                    <button type="button" @click="addTag(tagId)">
-                        <ResourceCardTag class="hover:outline-1 hover:outline-amber-200" :color="getTagById(tagId).color" :text="getTagById(tagId).text"></ResourceCardTag>
+                    <label v-for="tag in tags" :key="tag.id" class="flex items-center space-x-2">
+                    <button type="button" @click="addTag(tag.id)">
+                        <ResourceCardTag class="hover:outline-1 hover:outline-amber-200" :color="tag.color" :text="tag.text"></ResourceCardTag>
                     </button>
                     </label>
                 </div>
