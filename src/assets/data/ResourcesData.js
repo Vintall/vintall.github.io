@@ -5,7 +5,7 @@ import CyaniluxPreview from "@/assets/media/resources/cyanilux.png"
 import RefactoringGuruPreview from "@/assets/media/resources/RefactoringGuru.png"
 import FreepikPreview from "@/assets/media/resources/freepik.png"
 import PalettonPreview from "@/assets/media/resources/paletton.png"
-//Tags: Market Research, Unity, Shaders, HLSL, ShaderGraph, Math
+//Tags: HLSL, ShaderGraph, Math
 
 export const getTagById = (id) => tags.value.find(tag => tag.id === id)
 
@@ -13,11 +13,17 @@ export const tags = ref([
   { id: 'Gamedev', text: 'Gamedev', color: 'bg-red-600/70' },
   { id: 'Unity', text: 'Unity', color: 'bg-green-600/70' },
   { id: 'Shaders', text: 'Shaders', color: 'bg-pink-600/70' },
+  { id: 'HLSL', text: 'HSLS', color: 'bg-pink-500/70' },
+  { id: 'CG', text: 'CG', color: 'bg-pink-500/70' },
+  { id: 'VFX', text: 'VFX', color: 'bg-orange-300/70' },
   { id: 'Solid', text: 'SOLID', color: 'bg-cyan-600/70' },
   { id: 'FreeAssets', text: 'Assets', color: 'bg-amber-600/70' },
   { id: 'Design', text: 'Design', color: 'bg-lime-600/70' },
   { id: 'Market', text: 'Market Research', color: 'bg-violet-600/70'},
   { id: 'Steam', text: 'Steam', color: 'bg-blue-600/70'},
+  { id: 'Repo', text: 'Repository', color: 'bg-blue-900/70'},
+  { id: 'Program', text: 'Program', color: 'bg-blue-900/70'},
+  { id: 'Web resource', text: 'Web Resource', color: 'bg-blue-900/70'},
 ])
 
 const resourceCards = ref([

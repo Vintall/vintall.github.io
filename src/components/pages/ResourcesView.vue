@@ -56,7 +56,7 @@ const removeTag = (_id) => {
     <div>
         <ContentView>
             <div class="flex flex-col text-xl text-balance bg-gray-800 rounded-2xl m-2 pt-3 px-3 border-gray-500 border-3 shadow-2xl shadow-gray-900">
-                <h1 class="text-gray-300 text-xl">Filters</h1>
+                <h1 class="text-gray-300 text-xl mb-1">Filters</h1>
                 <div class="mb-4 flex flex-wrap gap-2 min-h-8">
                     <label v-for="tag in tags" :key="tag.id" class="flex items-center space-x-2">
                     <button type="button" @click="addTag(tag.id)">
@@ -65,7 +65,7 @@ const removeTag = (_id) => {
                     </label>
                 </div>
                 <div class="flex w-full h-0.5 bg-gray-500"></div>
-                <h1 class="text-gray-300 text-xl">Selected Filters</h1>
+                <h1 class="text-gray-300 text-xl mb-1">Selected Filters</h1>
                 <div class="mb-4 flex flex-wrap gap-2 min-h-8">
                     <label v-for="tagId in selectedTagIds" :key="tagId" class="flex items-center space-x-2">
                     <button type="button" @click="removeTag(tagId)">
@@ -75,7 +75,6 @@ const removeTag = (_id) => {
                 </div>
             </div>
             
-
             <div v-for="resourceCard in filteredItems">
                 <ResourceCard :name="resourceCard.name" :link="resourceCard.link" :img="resourceCard.img" :desc="resourceCard.desc" :tagIds="resourceCard.tagIds"></ResourceCard>
             </div>
