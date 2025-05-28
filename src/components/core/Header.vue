@@ -1,7 +1,7 @@
 <script setup>
-import GitHubIcon from "/src/assets/media/images/socialNetworks/GitHubCircle.png"
-import DiscordIcon from "/src/assets/media/images/socialNetworks/DiscordCircle.png"
-import TelegramCircle from "/src/assets/media/images/socialNetworks/TelegramCircle.png"
+import GitHubIcon from "@/assets/media/images/socialNetworks/GitHubCircle.png"
+import DiscordIcon from "@/assets/media/images/socialNetworks/DiscordCircle.png"
+import TelegramCircle from "@/assets/media/images/socialNetworks/TelegramCircle.png"
 </script>
 
 <template>
@@ -14,13 +14,13 @@ import TelegramCircle from "/src/assets/media/images/socialNetworks/TelegramCirc
             </div>
             <div class="flex flex-row flex-wrap items-center justify-end w-full">
                 <a href="https://github.com/Vintall">
-                    <img class="w-10 h-10" :src=GitHubIcon>
+                    <img class="w-10 h-10 rounded-full hover:outline-1 hover:outline-cyan-400" :src=GitHubIcon>
                 </a>
                 <a href="https://discord.gg/77HgCv2JRw">
-                    <img class="w-10 h-10" :src=DiscordIcon>
+                    <img class="w-10 h-10 rounded-full hover:outline-1 hover:outline-cyan-400" :src=DiscordIcon>
                 </a>
                 <a href="http://t.me/vintall">
-                    <img class="w-10 h-10" :src=TelegramCircle>
+                    <img class="w-10 h-10 rounded-full hover:outline-1 hover:outline-cyan-400" :src=TelegramCircle>
                 </a>
             </div>
         </div>
