@@ -5,7 +5,8 @@ import ContentView from '@/components/core/ContentView.vue';
 import ResourceCard from '@/components/ResourceCard.vue';
 import ResourceCardShort from '@/components/ResourceCardShort.vue';
 import { resourceCardsList, getTagById, tags } from '@/assets/data/ResourcesData.js';
-import ResourceCardTag from '../ResourceCardTag.vue';
+import ResourceCardTag from '@/components/ResourceCardTag.vue';
+import BreakLine from '@/components/pages/BreakLine.vue';
 
 const route = useRoute()
 const router = useRouter()
@@ -82,7 +83,7 @@ const isOn = ref(false)
                   </button>
                   </label>
               </div>
-              <div class="flex w-full h-0.5 bg-gray-500"></div>
+              <BreakLine></BreakLine>
               <h1>Selected Filters</h1>
               <div class="mb-4 flex flex-wrap gap-2 min-h-8">
                   <label v-for="tagId in selectedTagIds" :key="tagId" class="flex items-center space-x-2">

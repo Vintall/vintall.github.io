@@ -1,26 +1,17 @@
 <script setup>
 import ContentView from '@/components/core/ContentView.vue';
-import CommercialProjects from '@/components/projectsColumns/impls/CommercialProjects.vue';
+import CommercialProjectsColumn from '@/components/projectsColumns/impls/CommercialProjectsColumn.vue';
 import GameJamsColumn from '@/components/projectsColumns/impls/GameJamsColumn.vue';
-import { ref } from 'vue';
-
-const testTags = ref([
-    { link: "http://vintall.github.io", img: "src/assets/media/SlapSlapping.gif" },
-    { link: "http://vintall.github.io", img: "src/assets/media/SlapSlapping.gif" },
-    ])
-
-
-
-
-
+import OtherProjectsColumn from '@/components/projectsColumns/impls/OtherProjectsColumn.vue';
 </script>
 
 <template>
     <div>
         <ContentView>
-            <div class="flex flex-wrap justify-center gap-5 max-w-full min-w-max">
-                <CommercialProjects></CommercialProjects>
+            <div class="flex flex-col flex-wrap gap-5">
+                <CommercialProjectsColumn></CommercialProjectsColumn>
                 <GameJamsColumn></GameJamsColumn>
+                <OtherProjectsColumn></OtherProjectsColumn>
             </div>
         </ContentView>
     </div>

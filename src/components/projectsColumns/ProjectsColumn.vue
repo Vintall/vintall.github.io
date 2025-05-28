@@ -8,8 +8,10 @@ defineProps({
 </script>
 
 <template>
-    <div class="flex flex-col min-w-max max-h-min gap-3 h-auto bg-gray-800 p-5 rounded-3xl">
-        <h2 class="align-middle text-center text-3xl font-medium text-gray-300 text-shadow-2xs text-shadow-gray-600">{{ columnName }}</h2>
-        <slot></slot>
+    <div class="flex flex-col gap-1 h-auto bg-gray-800 p-3 rounded-3xl">
+        <h2 class="text-start pl-2 text-2xl font-bold text-shadow-2xs text-shadow-gray-950 text-gray-300">{{ columnName }}</h2>
+        <div class="flex flex-col flex-wrap">
+          <slot></slot>
+        </div>
     </div>
 </template>
