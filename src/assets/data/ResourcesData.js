@@ -5,25 +5,29 @@ import CyaniluxPreview from "@/assets/media/resources/cyanilux.png"
 import RefactoringGuruPreview from "@/assets/media/resources/RefactoringGuru.png"
 import FreepikPreview from "@/assets/media/resources/freepik.png"
 import PalettonPreview from "@/assets/media/resources/paletton.png"
+import CaesiumImageCreatorPreview from "@/assets/media/resources/caesiumImageCreator.png"
+import AlternativeToPreview from "@/assets/media/resources/alternativeTo.png"
 //Tags: HLSL, ShaderGraph, Math
 
 export const getTagById = (id) => tags.value.find(tag => tag.id === id)
 
 export const tags = ref([
   { id: 'Gamedev', text: 'Gamedev', color: 'bg-red-600/50' },
-  { id: 'Unity', text: 'Unity', color: 'bg-green-600/50' },
-  { id: 'Shaders', text: 'Shaders', color: 'bg-pink-600/50' },
-  { id: 'HLSL', text: 'HSLS', color: 'bg-pink-500/50' },
-  { id: 'CG', text: 'CG', color: 'bg-pink-500/50' },
-  { id: 'VFX', text: 'VFX', color: 'bg-orange-300/50' },
-  { id: 'Solid', text: 'SOLID', color: 'bg-cyan-600/50' },
-  { id: 'FreeAssets', text: 'Assets', color: 'bg-amber-600/50' },
-  { id: 'Design', text: 'Design', color: 'bg-lime-600/50' },
-  { id: 'Market', text: 'Market Research', color: 'bg-violet-600/50'},
-  { id: 'Steam', text: 'Steam', color: 'bg-blue-600/50'},
-  { id: 'Repo', text: 'Repository', color: 'bg-blue-900/50'},
-  { id: 'Program', text: 'Program', color: 'bg-blue-900/50'},
-  { id: 'Web resource', text: 'Web Resource', color: 'bg-blue-900/50'},
+  { id: 'Unity', text: 'Unity', color: 'bg-orange-500/50' },
+  { id: 'Shaders', text: 'Shaders', color: 'bg-yellow-500/50' },
+  { id: 'HLSL', text: 'HLSL', color: 'bg-lime-500/50' },
+  { id: 'CG', text: 'CG', color: 'bg-green-500/50' },
+  { id: 'VFX', text: 'VFX', color: 'bg-emerald-500/50' },
+  { id: 'Solid', text: 'SOLID', color: 'bg-cyan-500/50' },
+  { id: 'FreeAssets', text: 'Assets', color: 'bg-sky-500/50' },
+  { id: 'Design', text: 'Design', color: 'bg-blue-500/50' },
+  { id: 'Market', text: 'Market Research', color: 'bg-indigo-500/50' },
+  { id: 'Steam', text: 'Steam', color: 'bg-violet-500/50' },
+  { id: 'Repo', text: 'Repository', color: 'bg-fuchsia-500/50' },
+  { id: 'Program', text: 'Program', color: 'bg-pink-500/50' },
+  { id: 'WebResource', text: 'Web Resource', color: 'bg-rose-500/50' },
+  { id: 'Tools', text: 'Tools', color: 'bg-stone-500/50' },
+  { id: 'AI', text: 'AI', color: 'bg-stone-500/50' },
 ])
 
 const resourceCards = ref([
@@ -60,7 +64,7 @@ const resourceCards = ref([
         link: "https://www.freepik.com/",
         img: FreepikPreview,
         desc: "AI-powered platform for source content (paid). But you can also find here royalty-free music or free icons",
-        tagIds: ['FreeAssets']
+        tagIds: ['FreeAssets', 'AI']
     },
     {
         name: "Paletton",
@@ -68,13 +72,35 @@ const resourceCards = ref([
         img: PalettonPreview,
         desc: "The color scheme designer. Helps to make good color combinations without extensive knowledge in color design",
         tagIds: ['Design']
-    }/*,
+    },
+    {
+        name: "Caesium Image Compressor",
+        link: "https://github.com/Lymphatus/caesium-image-compressor",
+        img: CaesiumImageCreatorPreview,
+        desc: "Free&OpenSource image compression software. Supporting JPG, PNG, WebP and TIFF formats. Loss/Lossless compression. Must-have for web applications.",
+        tagIds: ['Tools', 'Program']
+    },
+    {
+        name: "AlternativeTo",
+        link: "https://alternativeto.net/",
+        img: AlternativeToPreview,
+        desc: "Find Free&OpenSource alternatives to proprietary software",
+        tagIds: ['Tools', 'WebResource']
+    },
+    {
+        name: "Sensor Tower",
+        link: "https://sensortower.com/",
+        img: "",
+        desc: "",
+        tagIds: ['Gamedev', 'Market']
+    }
+   /*,
     {
         name: "",
         link: "",
         img: "",
         desc: "",
-        tags: ['Gamedev']
+        tagIds: ['Gamedev']
     }*/
 ])
 
