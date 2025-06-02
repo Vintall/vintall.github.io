@@ -1,4 +1,5 @@
 <script setup>
+import Icon from "@/assets/media/icon.png"
 import GitHubIcon from "@/assets/media/images/socialNetworks/GitHubCircle.png"
 import DiscordIcon from "@/assets/media/images/socialNetworks/DiscordCircle.png"
 import TelegramCircle from "@/assets/media/images/socialNetworks/TelegramCircle.png"
@@ -7,7 +8,10 @@ import TelegramCircle from "@/assets/media/images/socialNetworks/TelegramCircle.
 <template>
     <div class="flex flex-row flex-wrap w-full">
         <div class="flex flex-row w-full max-w-220 mx-auto bg-cyan-950 p-3 mt-5 rounded-3xl items-center justify-stretch">
-            <div class="flex flex-row flex-wrap space-x-3 ml-5 w-full">
+            <div class="flex flex-row flex-wrap items-center space-x-3  w-full">
+                <RouterLink to = "/" class="text-gray-300 font-bold hover:text-gray-500">
+                    <img :src=Icon class="h-10 w-10 rounded-full hover:outline-1 hover:outline-cyan-400">
+                </RouterLink>
                 <RouterLink to = "/" class="text-gray-300 font-bold hover:text-gray-500">Resources</RouterLink>
                 <RouterLink to = "/projects" class="text-gray-300 font-bold hover:text-gray-500">My Projects</RouterLink>
             </div>
