@@ -10,7 +10,6 @@ import TelegramCircle from "@/assets/media/images/socialNetworks/TelegramCircle.
             <div class="flex flex-row flex-wrap space-x-3 ml-5 w-full">
                 <RouterLink to = "/" class="text-gray-300 font-bold hover:text-gray-500">Resources</RouterLink>
                 <RouterLink to = "/projects" class="text-gray-300 font-bold hover:text-gray-500">My Projects</RouterLink>
-                <RouterLink to = "/resume" class="text-gray-300 font-bold hover:text-gray-500">Resume</RouterLink>
             </div>
             <div class="flex flex-row flex-wrap items-center justify-end w-full">
                 <a href="https://github.com/Vintall">
