@@ -1,6 +1,6 @@
 <script setup>
 import ResourceCardTag from './ResourceCardTag.vue';
-import { getTagById } from '@/assets/data/ResourcesData';
+import { getTagById } from '@/assets/data/Resources/ResourcesData';
 defineProps({
   name: {
     type: String,

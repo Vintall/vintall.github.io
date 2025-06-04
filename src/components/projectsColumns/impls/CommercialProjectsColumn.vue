@@ -9,7 +9,7 @@ const mergeGamesTags = MergeGamesData()
 </script>
 
 <template>
-    <ProjectsColumn column-name="Commercial Projects">
+    <ProjectsColumn column-name="Commercial Projects (7)">
         <GameCard 
             img="https://play-lh.googleusercontent.com/Dn1Gp9QdlvpT1Ya2cKLCTZgCbu8RO5u616Fm6zRQrDtw8wJjxHu_yCHXjG4EohLzWA=w526-h296" 
             :tags=mergeGamesTags name="Crypto Merge Games">

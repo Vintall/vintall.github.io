@@ -69,7 +69,7 @@ const gameJamsCards = ref([
 </script>
 
 <template>
-    <ProjectsColumn column-name="Game Jams">
+    <ProjectsColumn column-name="Game Jams (6)">
         <div v-for="item in gameJamsCards">
             <GameCard :link="item.link" :img="item.img" :name="item.name">
                 <div class="flex flex-col overflow-hidden w-full h-full text-xl grow container self-stretch">

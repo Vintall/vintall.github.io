@@ -4,7 +4,7 @@ import { ref, computed, watch } from 'vue'
 import ContentView from '@/components/core/ContentView.vue';
 import ResourceCard from '@/components/ResourceCard.vue';
 import ResourceCardShort from '@/components/ResourceCardShort.vue';
-import { resourceCardsList, getTagById, tags } from '@/assets/data/ResourcesData.js';
+import { resourceCardsList, getTagById, tags } from '@/assets/data/Resources/ResourcesData.js';
 import ResourceCardTag from '@/components/ResourceCardTag.vue';
 import BreakLine from '@/components/pages/BreakLine.vue';
 
