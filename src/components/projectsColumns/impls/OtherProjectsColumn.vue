@@ -2,6 +2,7 @@
 import ProjectsColumn from '@/components/projectsColumns/ProjectsColumn.vue'
 import GameCard from '@/components/GameCard.vue';
 import LenticularPrintPreview from '@/assets/media/projects/LenticularPrint.gif'
+import Preview from '@/assets/media/preview.png'
 import { ref } from 'vue';
 
 const projectsCards = ref([
@@ -16,11 +17,17 @@ const projectsCards = ref([
         name: "VUFOC",
         description: "Unity package for free external configs. Based of Google Spreadsheets 'Publish To Web' feature. Simple config code generation."
     },
+    {  
+        img: Preview, 
+        name: "This page",
+        description: "Build with Vue.js and Tailwind for styling"
+    },
 ])
+
 </script>
 
 <template>
-    <ProjectsColumn column-name="Other (2)">
+    <ProjectsColumn column-name="Other (3)">
         <div v-for="item in projectsCards">
             <GameCard :link="item.link" :img="item.img" :name="item.name">
                 {{ item.description }}
