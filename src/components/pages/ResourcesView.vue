@@ -117,10 +117,16 @@ const isOn = ref(false)
             </div>
             
             <div v-if="!isOn" v-for="resourceCard in filteredItems">
-                <ResourceCard :name="resourceCard.name" :link="resourceCard.link" :img="resourceCard.img" :desc="resourceCard.desc" :tagIds="resourceCard.tagIds"></ResourceCard>
+              <ResourceCard v-if="resourceCard.img != ''" :name="resourceCard.name" :link="resourceCard.link" :img="resourceCard.img" :desc="resourceCard.desc" :tagIds="resourceCard.tagIds"></ResourceCard>
+            </div>
+            <div v-if="!isOn" v-for="resourceCard in filteredItems">
+                <ResourceCard v-if="resourceCard.img == ''" :name="resourceCard.name" :link="resourceCard.link" :img="resourceCard.img" :desc="resourceCard.desc" :tagIds="resourceCard.tagIds"></ResourceCard>
             </div>
             <div v-if="isOn" v-for="resourceCard in filteredItems">
-                <ResourceCardShort :name="resourceCard.name" :link="resourceCard.link" :img="resourceCard.img" :desc="resourceCard.desc" :tagIds="resourceCard.tagIds"></ResourceCardShort>
+                <ResourceCardShort v-if="resourceCard.img != ''" :name="resourceCard.name" :link="resourceCard.link" :img="resourceCard.img" :desc="resourceCard.desc" :tagIds="resourceCard.tagIds"></ResourceCardShort>
+            </div>
+            <div v-if="isOn" v-for="resourceCard in filteredItems">
+                <ResourceCardShort v-if="resourceCard.img == ''" :name="resourceCard.name" :link="resourceCard.link" :img="resourceCard.img" :desc="resourceCard.desc" :tagIds="resourceCard.tagIds"></ResourceCardShort>
             </div>
         </ContentView>
     </div>
