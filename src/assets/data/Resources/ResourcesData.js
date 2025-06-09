@@ -61,29 +61,32 @@ import SteamDB from './ResourceCards/Web/SteamDB.js'
 export const getTagById = (id) => tags.value.find(tag => tag.id === id)
 
 export const tags = ref([
-  { id: 'Unity', text: 'Unity', color: 'bg-orange-500/50' },
-  { id: 'Shaders', text: 'Shaders', color: 'bg-yellow-500/50' },
-  { id: 'URP', text: 'URP', color: 'bg-yellow-500/50' },
-  { id: 'HDRP', text: 'HDRP', color: 'bg-yellow-500/50' },
-  { id: 'GLSL', text: 'GLSL', color: 'bg-lime-500/50' },
-  { id: 'HLSL', text: 'HLSL', color: 'bg-lime-500/50' },
-  { id: 'CG', text: 'CG', color: 'bg-green-500/50' },
-  { id: 'C#', text: 'C#', color: 'bg-green-500/50' },
-  { id: 'C++', text: 'C++', color: 'bg-green-500/50' },
-  { id: 'VFX', text: 'VFX', color: 'bg-emerald-500/50' },
-  { id: 'SFX', text: 'SFX', color: 'bg-emerald-500/50' },
-  { id: 'Solid', text: 'SOLID', color: 'bg-cyan-500/50' },
-  { id: 'FreeAssets', text: 'Assets', color: 'bg-sky-500/50' },
-  { id: 'Design', text: 'Design', color: 'bg-blue-500/50' },
-  { id: 'Market', text: 'Market Research', color: 'bg-indigo-500/50' },
-  { id: 'Repo', text: 'Repository', color: 'bg-fuchsia-500/50' },
-  { id: 'Program', text: 'Program', color: 'bg-pink-500/50' },
-  { id: 'WebResource', text: 'Web Resource', color: 'bg-rose-500/50' },
-  { id: 'Tools', text: 'Tools', color: 'bg-stone-500/50' },
-  { id: 'AI', text: 'AI', color: 'bg-stone-500/50' },
-  { id: 'ECS', text: 'ECS', color: 'bg-stone-500/50' },
-  { id: 'Learning', text: 'Learning', color: 'bg-stone-500/50' },
-  { id: 'Networking', text: 'Networking', color: 'bg-lime-300/50'}
+  { id: 'Repo', text: 'Repository', color: 'bg-fuchsia-500/50', type: 'Holder' },
+  { id: 'Program', text: 'Program', color: 'bg-pink-500/50', type: 'Holder' },
+  { id: 'WebResource', text: 'Web Resource', color: 'bg-rose-500/50', type: 'Holder' },
+
+  { id: 'GLSL', text: 'GLSL', color: 'bg-lime-500/50', type: 'Lang' },
+  { id: 'HLSL', text: 'HLSL', color: 'bg-lime-500/50', type: 'Lang' },
+  { id: 'CG', text: 'CG', color: 'bg-green-500/50', type: 'Lang' },
+  { id: 'C#', text: 'C#', color: 'bg-green-500/50', type: 'Lang' },
+  { id: 'C++', text: 'C++', color: 'bg-green-500/50', type: 'Lang' },
+
+  { id: 'Tools', text: 'Tools', color: 'bg-stone-500/50', type: 'Kind' },
+  { id: 'Learning', text: 'Learning', color: 'bg-stone-500/50', type: 'Kind' },
+  { id: 'FreeAssets', text: 'Assets', color: 'bg-sky-500/50', type: 'Kind' },
+  { id: 'Design', text: 'Design', color: 'bg-blue-500/50', type: 'Kind' },
+  { id: 'Market', text: 'Market Research', color: 'bg-indigo-500/50', type: 'Kind' },
+
+  { id: 'Unity', text: 'Unity', color: 'bg-orange-500/50', type: 'General' },
+  { id: 'Shaders', text: 'Shaders', color: 'bg-yellow-500/50', type: 'General' },
+  { id: 'URP', text: 'URP', color: 'bg-yellow-500/50', type: 'General' },
+  { id: 'HDRP', text: 'HDRP', color: 'bg-yellow-500/50', type: 'General' },
+  { id: 'VFX', text: 'VFX', color: 'bg-emerald-500/50', type: 'General' },
+  { id: 'SFX', text: 'SFX', color: 'bg-emerald-500/50', type: 'General' },
+  { id: 'Solid', text: 'SOLID', color: 'bg-cyan-500/50', type: 'General' },
+  { id: 'AI', text: 'AI', color: 'bg-stone-500/50', type: 'General' },
+  { id: 'ECS', text: 'ECS', color: 'bg-stone-500/50', type: 'General' },
+  { id: 'Networking', text: 'Networking', color: 'bg-lime-300/50', type: 'General' }
 ])
 
 const resourceCards = ref([

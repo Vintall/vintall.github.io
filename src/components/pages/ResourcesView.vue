@@ -76,12 +76,34 @@ const isOn = ref(false)
               </div>
               
               <h1>Filters</h1>
-              <div class="mb-4 flex flex-wrap gap-2 min-h-8">
-                  <label v-for="tag in tags" :key="tag.id" class="flex items-center space-x-2">
-                  <button type="button" @click="addTag(tag.id)">
+              <div class="mb-4 flex flex-wrap min-h-8">
+                <label v-for="tag in tags" :key="tag.id">
+                  <button v-if="tag.type == 'Holder'" type="button" class="mx-0.5" @click="addTag(tag.id)">
                       <ResourceCardTag class="hover:outline-1 hover:outline-cyan-600" :color="tag.color" :text="tag.text"></ResourceCardTag>
                   </button>
-                  </label>
+                </label>
+              </div>
+              <div class="mb-4 flex flex-wrap min-h-8">
+                <label v-for="tag in tags" :key="tag.id">
+                  <button v-if="tag.type == 'Lang'" type="button" class="mx-0.5" @click="addTag(tag.id)">
+                      <ResourceCardTag class="hover:outline-1 hover:outline-cyan-600" :color="tag.color" :text="tag.text"></ResourceCardTag>
+                  </button>
+                </label>
+              </div>
+              <div class="mb-4 flex flex-wrap min-h-8">
+                <label v-for="tag in tags" :key="tag.id">
+                  <button v-if="tag.type == 'Kind'" type="button" class="mx-0.5" @click="addTag(tag.id)">
+                      <ResourceCardTag class="hover:outline-1 hover:outline-cyan-600" :color="tag.color" :text="tag.text"></ResourceCardTag>
+                  </button>
+                </label>
+              </div>
+              
+              <div class="mb-4 flex flex-wrap min-h-8">
+                <label v-for="tag in tags" :key="tag.id">
+                  <button v-if="tag.type == 'General'" type="button" class="mx-0.5" @click="addTag(tag.id)">
+                      <ResourceCardTag class="hover:outline-1 hover:outline-cyan-600" :color="tag.color" :text="tag.text"></ResourceCardTag>
+                  </button>
+                </label>
               </div>
               <BreakLine></BreakLine>
               <h1>Selected Filters</h1>
