@@ -5,7 +5,7 @@ const data = {
         link: "https://refactoring.guru/design-patterns/catalog",
         img: RefactoringGuruPreview,
         desc: "Refactoring, design patterns, SOLID principles, and other smart programming topics",
-        tagIds: ['Solid']
+        tagIds: ['Solid', 'WebResource']
     }
 
 export default data

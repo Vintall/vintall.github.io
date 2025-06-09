@@ -5,7 +5,7 @@ const data = {
         link: "https://www.shadertoy.com/",
         img: ShadertoyPreview,
         desc: "Build and Share your best shaders with the world and get Inspired",
-        tagIds: ['Shaders']
+        tagIds: ['Shaders', 'WebResource']
     }
 
 export default data

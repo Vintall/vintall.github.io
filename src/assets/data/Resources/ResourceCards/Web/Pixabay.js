@@ -5,7 +5,7 @@ const data = {
         link: "https://pixabay.com/",
         img: PixabayPreview,
         desc: "Stunning royalty-free images & royalty-free stock",
-        tagIds: ['FreeAssets', 'SFX']
+        tagIds: ['FreeAssets', 'SFX', 'WebResource']
     }
 
 export default data

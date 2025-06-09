@@ -1,11 +1,11 @@
-import Preview from '@/assets/media/resources/steamDB.png'
+//import Preview from ''
 
 const data = {
         name: "Git Ignore Templates",
         link: "https://github.com/github/gitignore/tree/main",
-        img: Preview,
+        img: "",
         desc: "A collection of useful .gitignore templates.",
-        tagIds: []
+        tagIds: ['Repo']
     }
 
 export default data

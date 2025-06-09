@@ -5,7 +5,7 @@ const data = {
         link: "https://www.cyanilux.com/",
         img: CyaniluxPreview,
         desc: "URP Shader Tutorials",
-        tagIds: ['Gamedev', 'Unity', 'Shaders']
+        tagIds: ['Unity', 'Shaders', 'Learning', 'WebResource']
     }
 
 export default data

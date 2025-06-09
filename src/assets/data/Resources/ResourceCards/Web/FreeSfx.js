@@ -5,7 +5,7 @@ const data = {
         link: "https://freesfx.co.uk/",
         img: FreeSfxPreview,
         desc: "Browse selection of Free Sound Effects and Music",
-        tagIds: ['FreeAssets', 'SFX']
+        tagIds: ['FreeAssets', 'SFX', 'WebResource']
     }
 
 export default data

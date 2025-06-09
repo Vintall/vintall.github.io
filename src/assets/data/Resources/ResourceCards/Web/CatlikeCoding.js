@@ -5,7 +5,7 @@ const data = {
         link: "https://catlikecoding.com/unity/tutorials/",
         img: CatLikeCodingPreview,
         desc: "C# and Shader Tutorials for the Unity Engine",
-        tagIds: ['Gamedev', 'Unity', 'Shaders']
+        tagIds: ['Unity', 'Shaders', 'WebResource', 'Learning']
     }
 
 export default data

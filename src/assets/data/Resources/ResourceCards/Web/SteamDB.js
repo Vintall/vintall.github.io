@@ -5,7 +5,7 @@ const data = {
         link: "https://steamdb.info/",
         img: SteamDBPreview,
         desc: "This third-party website gives you better insight into the Steam platform and everything in its database.",
-        tagIds: ['Gamedev', 'Market']
+        tagIds: ['Market', 'WebResource']
     }
 
 export default data

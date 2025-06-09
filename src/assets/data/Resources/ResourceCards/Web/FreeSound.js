@@ -5,7 +5,7 @@ const data = {
         link: "https://freesound.org/",
         img: FreeSoundPreview,
         desc: "Find any sound you like",
-        tagIds: ['FreeAssets', 'SFX']
+        tagIds: ['FreeAssets', 'SFX', 'WebResource']
     }
 
 export default data

@@ -5,7 +5,7 @@ const data = {
         link: "https://www.redblobgames.com/",
         img: RedBlobGamesPreview,
         desc: "Interactive visual explanations of math and algorithms",
-        tagIds: ['Gamedev']
+        tagIds: ['Learning', 'WebResource']
     }
 
 export default data

@@ -5,7 +5,7 @@ const data = {
         link: "https://paletton.com/",
         img: PalettonPreview,
         desc: "The color scheme designer. Helps to make good color combinations without extensive knowledge in color design",
-        tagIds: ['Design']
+        tagIds: ['Design', 'WebResource']
     }
 
 export default data

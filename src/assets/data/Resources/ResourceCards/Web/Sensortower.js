@@ -5,7 +5,7 @@ const data = {
         link: "https://sensortower.com/",
         img: SensortowerPreview,
         desc: "Measure the world’s digital economy with Sensor Tower",
-        tagIds: ['Market']
+        tagIds: ['Market', 'WebResource']
     }
 
 export default data

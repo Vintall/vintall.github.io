@@ -5,7 +5,7 @@ const data = {
         link: "https://www.cgal.org/",
         img: CGALPreview,
         desc: "CGAL is an open source software project that provides easy access to efficient and reliable geometric algorithms in the form of a C++ library.",
-        tagIds: []
+        tagIds: ['C++', 'WebResource']
     }
 
 export default data
