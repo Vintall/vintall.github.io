@@ -10,7 +10,7 @@ defineProps({
   },
   img: {
     type: String,
-    required: true,
+    required: false,
   },
   tags: {
     type: Object,
@@ -29,7 +29,8 @@ import GameCardTag from '@/components/GameCardTag.vue'
     :class="[link ? 'hover:bg-gray-900' : '']" :href="link">
     <h1 class="mt-1 text-2xl font-extrabold text-gray-200 border-b-2 border-gray-200 px-6 pb-2">{{ name }}</h1>
     <div class="flex flex-col md:flex-row items-center md:items-start w-full">
-      <img class="flex w-full md:max-w-75 md:h-50 md:rounded-bl-xl border-gray-300 border-b-2 md:border-b-0 md:border-r-2" :src="img">
+      <video v-if="img.endsWith('.webm')" class="flex w-full md:max-w-75 md:h-50 md:rounded-bl-xl border-gray-300 border-b-2 md:border-b-0 md:border-r-2" :src="img" :autoplay="true" :loop="true"></video>
+      <img v-if="!img.endsWith('.webm')" class="flex w-full md:max-w-75 md:h-50 md:rounded-bl-xl border-gray-300 border-b-2 md:border-b-0 md:border-r-2" :src="img">
       <div class="flex flex-col flex-wrap w-full p-3 self-stretch gap-2">
         <p class="flex w-full text-gray-200 overflow-auto text-wrap text-clip text-xl grow flex-col">{{ desc }}
           <slot></slot>

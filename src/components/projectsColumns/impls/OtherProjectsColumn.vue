@@ -2,6 +2,8 @@
 import ProjectsColumn from '@/components/projectsColumns/ProjectsColumn.vue'
 import GameCard from '@/components/GameCard.vue';
 import LenticularPrintPreview from '@/assets/media/projects/LenticularPrint.gif'
+import RGBPreview from '@/assets/media/projects/rgbPrint2.webm'
+import ReflectivePreview from '@/assets/media/projects/reflectiveStrip1.webm'
 import Preview from '@/assets/media/preview.png'
 import { ref } from 'vue';
 
@@ -20,14 +22,24 @@ const projectsCards = ref([
     {  
         img: Preview, 
         name: "This page",
-        description: "Build with Vue.js and Tailwind for styling"
+        description: "Build with Vue.js and Tailwind for styling."
+    },
+    {  
+        img: RGBPreview, 
+        name: "RGB Shader",
+        description: "RBG screen shader. Mapping channels using mask shift. CGShader"
+    },
+    {  
+        img: ReflectivePreview, 
+        name: "Reflective Material",
+        description: "Rewriting surface normal to point at camera. Can be used in road signs and visibility vests. ShaderGraph"
     },
 ])
 
 </script>
 
 <template>
-    <ProjectsColumn column-name="Other (3)">
+    <ProjectsColumn column-name="Other Projects / Shader Showcase (5)">
         <div v-for="item in projectsCards">
             <GameCard :link="item.link" :img="item.img" :name="item.name">
                 {{ item.description }}
