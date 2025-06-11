@@ -48,6 +48,7 @@ import Cyanilux from './ResourceCards/Web/Cyanilux.js'
 import Freepik from './ResourceCards/Web/Freepik.js'
 import FreeSfx from './ResourceCards/Web/FreeSfx.js'
 import FreeSound from './ResourceCards/Web/FreeSound.js'
+import GamesStats from './ResourceCards/Web/GamesStats.js'
 import MagicaVoxel from './ResourceCards/Web/MagicaVoxel.js'
 import Paletton from './ResourceCards/Web/Paletton.js'
 import Pixabay from './ResourceCards/Web/Pixabay.js'
@@ -138,6 +139,7 @@ const resourceCards = ref([
   Freepik,
   FreeSfx,
   FreeSound,
+  GamesStats,
   MagicaVoxel,
   Paletton,
   Pixabay,
