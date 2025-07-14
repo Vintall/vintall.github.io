@@ -58,6 +58,7 @@ import SemanticsVersioning from './ResourceCards/Web/SemanticsVersioning.js'
 import Sensortower from './ResourceCards/Web/Sensortower.js'
 import Shadertoy from './ResourceCards/Web/Shadertoy.js'
 import SteamDB from './ResourceCards/Web/SteamDB.js'
+import UnityEbooks from './ResourceCards/Web/UnityEbooks.js'
 
 export const getTagById = (id) => tags.value.find(tag => tag.id === id)
 
@@ -149,6 +150,7 @@ const resourceCards = ref([
   Sensortower,
   Shadertoy,
   SteamDB,
+  UnityEbooks
 ])
 
 export const resourceCardsList = resourceCards
