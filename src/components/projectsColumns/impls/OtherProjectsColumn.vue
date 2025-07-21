@@ -14,17 +14,6 @@ const projectsCards = ref([
         name: "Lenticular Print",
         description: "Lenticular Print HLSL shader (URP). SRP Batcher compatible. Input: Array of N images. Mapping image index to a tangent space depending on view angle. Image seems is blended with neighbours. Can be used for a holographic effect for access cards."
     },
-    { 
-        link: "https://github.com/Vintall/Unity-Free-Online-Config", 
-        img: 'https://github.com/Vintall/Unity-Free-Online-Config/blob/media/Media/Guideline/Compressed/05.png?raw=true', 
-        name: "VUFOC",
-        description: "Unity package for free external configs. Based of Google Spreadsheets 'Publish To Web' feature. Simple config code generation."
-    },
-    {  
-        img: Preview, 
-        name: "This page",
-        description: "Build with Vue.js and Tailwind for styling."
-    },
     {  
         img: RGBPreview, 
         name: "RGB Shader",
@@ -40,12 +29,23 @@ const projectsCards = ref([
         name: "Refraction Shader",
         description: "URP, HLSL. Fetching color buffer and shifting fragment's ScreenSpace coordinate based on surface normal map. Lit by LambertLighting."
     },
+    { 
+        link: "https://github.com/Vintall/Unity-Free-Online-Config", 
+        img: 'https://github.com/Vintall/Unity-Free-Online-Config/blob/media/Media/Guideline/Compressed/05.png?raw=true', 
+        name: "VUFOC",
+        description: "Unity package for free external configs. Based of Google Spreadsheets 'Publish To Web' feature. Simple config code generation."
+    },
+    {  
+        img: Preview, 
+        name: "This page",
+        description: "Build with Vue.js and Tailwind for styling."
+    },
 ])
 
 </script>
 
 <template>
-    <ProjectsColumn column-name="Other Projects / Shader Showcase (5)">
+    <ProjectsColumn column-name="Shader Showcase / Other Projects (6)">
         <div v-for="item in projectsCards">
             <GameCard :link="item.link" :img="item.img" :name="item.name">
                 {{ item.description }}
