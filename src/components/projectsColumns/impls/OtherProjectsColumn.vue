@@ -4,6 +4,7 @@ import GameCard from '@/components/GameCard.vue';
 import LenticularPrintPreview from '@/assets/media/projects/LenticularPrint.gif'
 import RGBPreview from '@/assets/media/projects/rgbPrint2.webm'
 import ReflectivePreview from '@/assets/media/projects/reflectiveStrip1.webm'
+import RefractionShaderPreview from '@/assets/media/projects/refractionShader.webm'
 import Preview from '@/assets/media/preview.png'
 import { ref } from 'vue';
 
@@ -33,6 +34,11 @@ const projectsCards = ref([
         img: ReflectivePreview, 
         name: "Reflective Material",
         description: "Rewriting surface normal to point at camera. Can be used in road signs and visibility vests. ShaderGraph"
+    },
+    {  
+        img: RefractionShaderPreview, 
+        name: "Refraction Shader",
+        description: "URP, HLSL. Fetching color buffer and shifting fragment's ScreenSpace coordinate based on surface normal map. Lit by LambertLighting."
     },
 ])
 
